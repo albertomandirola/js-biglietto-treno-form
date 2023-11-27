@@ -8,33 +8,34 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container my-5">
-        <div class="row">
+    <div class="container-sm my-5 bg-primary">
+        <h1 class="text-center ">Calcola il prezzo del tuo biglietto</h1>
+        <div class="row text-center mt-3 g-3 bg-white border radious-2">
             <div class="col-12 col-md-4">
                 <label for="name" class="control-label">Nome e cognome</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Nome e cognome">
+                <input type="text" class="form-control mt-2" name="name" id="name" placeholder="Nome e cognome">
             </div>
             <div class="col-12 col-md-4">
                 <label for="km" class="control-label">Km da percorrere</label>
-                <input type="number" class="form-control" min="0"name="km" id="km" placeholder="Km da percorrere">
+                <input type="number" class="form-control mt-2" min="0"name="km" id="km" placeholder="Km da percorrere">
             </div>
             <div class="col-12 col-md-4">
                 <label for="age" class="control-label">Eta del passeggero</label>
-                <select class="form-control" name="age" id="age">
+                <select class="form-control mt-2" name="age" id="age">
                     <option value="">Selezionare il range d'età</option>
                     <option value="1">Under 18</option>
                     <option value="2">Maggiorenne</option>
                     <option value="3">Over 65</option>
                 </select>
             </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-12">
+            <div class="col-12 mt-3">
                 <button id="calc-price" class="btn btn-sm btn-success">Calcola prezzo</button>
                 <button id="reset" class="btn btn-sm btn-danger">reset</button>
             </div>
         </div>
-        <div class="row mt-3">
+        <h1 class="text-center my-2">Il tuo biglietto</h1>
+       
+        <div class="row g-3 mt-3 bg-white">
             <div class="col-12 col-md-4">
                 <h5>Nome e cognome del passeggero</h5>
                 <p id="name-surname"></p>
@@ -48,6 +49,7 @@
                 <p id="price"></p>
             </div>
         </div>
+        <hr>
     </div>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
